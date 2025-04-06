@@ -2,7 +2,7 @@ import pandas as pd # type: ignore
 import numpy as np # type: ignore
 
 # Load the datasetdf = pd.read_csv("E:/DSV/Most Profitable Movies of All Time - Top 500 Movies.csv")
-df = pd.read_csv("E:/DSV/Most Profitable Movies of All Time - Top 500 Movies.csv")
+df = pd.read_csv("E:/DAV/Most Profitable Movies of All Time - Top 500 Movies.csv")
 df.columns = df.columns.str.strip()  # Strip column names
 
 
