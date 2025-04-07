@@ -1,46 +1,38 @@
+Movie Dataset Analysis Output
+Unit I: NumPy Operations
 
-📊 Movie Dataset Analysis Output
-
-✅ Unit I: NumPy Operations
-
-🔹 Fixed Type Arrays (Budget Slice)
+ Fixed Type Arrays (Budget Slice)
 [ 17.  36.  85. 183.  28.]
-
-🔹 Reshaped Array
+ Reshaped Array
 [[ 65.  90. 200.]
  [ 67.  50. 110.]]
-
-🔹 Concatenation
+ Concatenation
 [ 65.  90. 200. 211. 159. 166.]
 
-🔹 Splitting
+Splitting
 [array([65., 90.]), array([200.,  67.]), array([ 50., 110.])]
 
-🔹 Universal Function (Log)
+ Universal Function (Log)
 [19.94 19.77 20.49 19.59 19.62]
 
-🔹 Aggregation
+Aggregation
 Sum: 60954.865
 Mean: 108.46061387900357
-
-🔹 Broadcasting Example (Add 10)
+ Broadcasting Example (Add 10)
 [ 75. 100. 210.  77.  60.]
-
-🔹 Boolean Mask (budget > 100)
+ Boolean Mask (budget > 100)
 [200. 110. 120. 200. 183. 200. 170. 150. 130. 195. 160. 140. 115. 237. 250. 250. 356. 321. 150. 250. 160. 165. 230. 205. 250. 200. 150. 185. 127. 136. 135. 250. 140. 170. 152. 120. 200. 175. 150. 150. 150. 125. 225. 170. 110. 142. 125. 165. 200. 170. 165. 178. 200. 200. 200. 200. 200. 120. 160. 125. 200. 125. 150. 150. 190. 130. 103. 160. 150. 200. 170. 170. 200. 150. 150. 150. 130. 125. 125. 125. 250. 200. 135. 123. 165. 145. 129. 150. 120. 105. 160. 200. 165. 185. 175. 165. 140. 200. 200. 120. 132. 150...
 
-🔹 Fancy Indexing
+Fancy Indexing
 [ 65. 200.  50.]
-
-🔹 Sorted Budgets
+ Sorted Budgets
 [  2.5  50.   58.   65.   67.   90.  110.  120.  200.  200. ]
-
-🔹 Argsorted Budgets
+ Argsorted Budgets
 [9 4 6 0 3 1 5 7 2 8]
 
-✅ Unit II: Pandas Operations
+ Unit II: Pandas Operations
 
-🔹 Series Head
+ Series Head
 0     65.0
 1     90.0
 2    200.0
@@ -48,7 +40,7 @@ Mean: 108.46061387900357
 4     50.0
 Name: budget  (millions), dtype: float64
 
-🔹 DataFrame Slice
+ DataFrame Slice
              title  budget  (millions)  worldwide gross
 0             300                65.0        456082343
 1            1917                90.0        384576334
@@ -56,7 +48,7 @@ Name: budget  (millions), dtype: float64
 3  101 Dalmatians                67.0        320689294
 4  22 Jump Street                50.0        331333876
 
-🔹 UFunc Example (Square Root)
+UFunc Example (Square Root)
 0     8.062258
 1     9.486833
 2    14.142136
@@ -64,7 +56,7 @@ Name: budget  (millions), dtype: float64
 4     7.071068
 Name: budget  (millions), dtype: float64
 
-🔹 Index Alignment
+ Index Alignment
 0      4.560821e+08
 1      3.845762e+08
 2      7.912177e+08
@@ -72,7 +64,7 @@ Name: budget  (millions), dtype: float64
 561    4.273305e+08
 Length: 562, dtype: float64
 
-🔹 Missing Values
+ Missing Values
 title                              0
 worldwide gross (m)                0
 % budget recovered                 0
@@ -90,16 +82,16 @@ budget source                    163
 force label                      557
 horror                             0
 
-🔹 Fill NAs
+ Fill NAs
    title  worldwide gross (m) % budget recovered  ...  budget source  force label      horror
 0   300                456.0               702%  ...        Unknown         None  not horror
 
-🔹 Hierarchical Indexing
+ Hierarchical Indexing
              title  worldwide gross (m) % budget recovered  ...  budget source  force label      horror
 decade year                                                ...
 2000's 2007   300                456.0               702%  ...            NaN          NaN  not horror
 
-🔹 Grouped by Decade
+Grouped by Decade
          worldwide gross (m)  X times budget recovered  budget  (millions)  ...
 decade
 1970's           522.250000                 56.550000            9.500000
@@ -109,24 +101,24 @@ decade
 2010's           538.185256                 10.737500          112.324038
 2020's           695.200000                  4.363333          172.000000
 
-✅ Unit III: Combining & Pivoting
+Unit III: Combining & Pivoting
 
-🔹 Concatenated DataFrame
+ Concatenated DataFrame
    title  worldwide gross (m) % budget recovered  ...  budget source  force label      horror
 0   300                456.0               702%  ...            NaN          NaN  not horror
 1  1917                385.0               427%  ...  https://...          NaN  not horror
 
-🔹 Appended DataFrame
+ Appended DataFrame
    title  worldwide gross (m) % budget recovered  ...  budget source  force label      horror
 0   300                456.0               702%  ...            NaN          NaN  not horror
 1  1917                385.0               427%  ...  https://...          NaN  not horror
 
-🔹 Merged DataFrame
+ Merged DataFrame
     year  budget  (millions)                    title
 0  2007                65.0                      300
 1  2007                65.0  Alvin and the Chipmunks
 
-🔹 Grouped DF
+Grouped DF
          budget  (millions)  worldwide gross
 decade
 1970's            9.500000       2089487320
@@ -136,7 +128,7 @@ decade
 2010's          112.324038     168348906472
 2020's          172.000000      20392960519
 
-🔹 Pivot Table
+ Pivot Table
  horror       Horror        horror    not horror
 decade
 1970's          NaN  4.589091e+08  5.858346e+08
